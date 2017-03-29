@@ -1,0 +1,140 @@
+@import "bourbon"
+@import "vars.sass"
+
+@import "app/libs/bootstrap/css/bootstrap-theme";
+@import "app/libs/bootstrap/css/bootstrap";
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+a
+	text-decoration: none
+	color: inherit
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: inherit
+
+button
+	&:active,
+	&:focus 
+		outline: none
+
+
+
+.header
+	width: 100%
+	height: auto
+	background: url(../img/bg-header.jpg)
+	background-size: cover
+	padding: 20px 0 197px
+	position: relative
+	&__top
+		border-bottom: 1px solid #557676
+		padding-bottom: 19px
+
+	&::before
+		content: ""
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		position: absolute
+		background: rgba(45, 110, 112,.8) 
+
+.logo
+	font-family: "ProximaNova-Bold"
+	font-size: em(29px)
+	color: #ffffff
+
+.contact-pos
+	display: flex
+	align-items: center
+	margin: 12px 28px
+	border-left: 2px solid #506b6c
+	height: 21px
+	padding-left: 26px
+	
+.contact__number
+	font-family: "Montserrat"
+	font-size: em(14px)
+	font-size: 13px
+	padding-left: 7px
+	color: #ffffff
+
+.fa-phone
+	font-size: em(19px)
+	color: #ffffff
+
+
+.menu
+	height: 32px
+	list-style: none
+	width: 76%
+	&:first-child
+		padding-left: 0
+	&__item
+		display: flex
+		align-items: center
+		height: 100%
+		float: left
+		margin-left: 10px
+		font-family: "Montserrat"
+		font-size: em(13px)
+		color: #bec8c8
+		border-radius: 2px
+		padding-left: 13px
+		padding-right: 13px
+		transition: background .3s ease
+		&:hover
+				background: #6e8585
+				color: #ffffff
+				
+		&:active
+			background: #b1b1b1
+			color: #727272
+			
+.menu-pos
+	margin: 6px 200px
+
+
+
+.header__text
+	margin: 207px 0 0
+	color: #ffffff
+	h2
+		font-size: em(38px)
+	p
+		font-size: em(16px)
+		margin: 0
+
+
+.button
+	height: 50px
+	width: 186px
+	border: none
+	border-radius: 1px
+	color: #ffffff
+	font-family: "Montserrat" 
+	font-size: em(14px)
+	background: #6fb048
+	transition: background .3s ease
+	&:hover
+		background: #529d25
+	&:active
+		background: #6fb048
+	
+
+.button-theme
+	margin-top: 19px
+
+
+

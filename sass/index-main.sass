@@ -1,0 +1,90 @@
+@import "bourbon"
+@import "vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+.features
+	height: auto
+	background: #ffffff
+	padding: 85px 0 130px
+
+
+.title
+	text-align: center
+	.hr
+		width: 67px
+		margin-top: 0
+		margin-bottom: 9px
+		padding: 0
+		background: $accent-color
+		height: 2px
+	&__up
+		font-size: em(31px)
+		margin-bottom: 17px
+		color: $main-color
+	&__down
+		padding: 0
+		margin: 0
+		font-size: em(15px)
+		color: lighten($main-color, 6%)
+
+
+
+.skills
+	margin-top: 120px
+	&__item
+		text-align: center
+		color: lighten($main-color, 6%)
+		span
+			font-size: em(16px)
+		p
+			margin: 0
+			padding: 0
+			font-size: em(14px)
+
+
+.look
+	background: #eef1ec
+	padding: 85px 0 130px
+
+
+
+
+
+
+
+
+
+.details
+	background: url(../img/bg-map.jpg)
+	background-size: cover
+	height: auto
+
+//ALWAYS END
+@import "media"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
