@@ -1,8 +1,9 @@
 @import "bourbon"
 @import "vars.sass"
 
-@import "app/libs/bootstrap/css/bootstrap-theme";
-@import "app/libs/bootstrap/css/bootstrap";
+@import "app/libs/bootstrap/css/bootstrap-theme"
+@import "app/libs/bootstrap/css/bootstrap"
+@import "app/libs/SlickNav/dist/slicknav"
 
 body
 	font-size: 16px
@@ -28,8 +29,6 @@ button
 	&:focus 
 		outline: none
 
-
-
 .header
 	width: 100%
 	height: auto
@@ -40,7 +39,6 @@ button
 	&__top
 		border-bottom: 1px solid #557676
 		padding-bottom: 19px
-
 	&::before
 		content: ""
 		left: 0
@@ -55,66 +53,82 @@ button
 	font-size: em(29px)
 	color: #ffffff
 
-.contact-pos
+.contact
+	height: 21px
 	display: flex
 	align-items: center
-	margin: 12px 28px
 	border-left: 2px solid #506b6c
-	height: 21px
+
+
+.contact-pos
+	margin: 12px 28px
 	padding-left: 26px
 	
 .contact__number
 	font-family: "Montserrat"
 	font-size: em(14px)
-	font-size: 13px
 	padding-left: 7px
 	color: #ffffff
+	letter-spacing: 1px
 
 .fa-phone
 	font-size: em(19px)
 	color: #ffffff
 
-
 .menu
-	height: 32px
+	display: flex
+	flex-direction: row
 	list-style: none
-	width: 76%
-	&:first-child
-		padding-left: 0
+	justify-content: flex-end
 	&__item
+		height: 32px
 		display: flex
 		align-items: center
-		height: 100%
-		float: left
-		margin-left: 10px
+		margin-right: 8px
+		padding-left: 13px
+		padding-right: 13px
 		font-family: "Montserrat"
 		font-size: em(13px)
 		color: #bec8c8
 		border-radius: 2px
-		padding-left: 13px
-		padding-right: 13px
-		transition: background .3s ease
+		cursor: pointer
+		transition: background .4s ease
+		a
+			outline: none
 		&:hover
-				background: #6e8585
-				color: #ffffff
-				
+			background: #6e8585
+			color: #ffffff	
 		&:active
 			background: #b1b1b1
-			color: #727272
-			
-.menu-pos
-	margin: 6px 200px
 
+		&:last-child
+			margin-right: 0
+
+
+.menu-pos
+	margin-top: 7px
+
+// custom menu SlickNav	
+.slicknav_menu 
+	display: none
+	text-align: center
+	background: #306f6e
+	padding-bottom: 12px	
+.slicknav_btn
+	background-color: #165856
 
 
 .header__text
-	margin: 207px 0 0
+	margin-top: 207px
 	color: #ffffff
+
 	h2
 		font-size: em(38px)
+		font-family: "ProximaNova-Bold"
 	p
 		font-size: em(16px)
 		margin: 0
+		font-family: "Montserrat"
 
 
 .button

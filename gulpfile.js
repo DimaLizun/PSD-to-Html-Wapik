@@ -33,6 +33,7 @@ gulp.task('scripts', function() {
 		'./app/libs/modernizr/modernizr.js',
 		'./app/libs/jquery/jquery-1.11.2.min.js',
 		'./app/libs/bootstrap/js/bootstrap.js',
+		'./app/libs/SlickNav/dist/jquery.slicknav.min.js',
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

@@ -24,15 +24,21 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+p
+	margin: 0
+	padding: 0
+
 
 .features
 	height: auto
 	background: #ffffff
-	padding: 85px 0 130px
-
-
+	padding: 64px 0 130px
+	
 .title
+	display: flex
+	flex-direction: column
+	align-items: center
+	a
 	text-align: center
 	.hr
 		width: 67px
@@ -54,34 +60,388 @@ body textarea:required:valid
 
 
 .skills
-	margin-top: 120px
+	margin-top: 66px
 	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
 		text-align: center
 		color: lighten($main-color, 6%)
-		span
-			font-size: em(16px)
+		h3
+			font-size: em(17px)
 		p
-			margin: 0
-			padding: 0
 			font-size: em(14px)
+			margin-top: 5px
+
+	&__icon
+		background: url(../img/sprite-features.png)
+	&__icon-1
+		background-position: 0px 0px
+		width: 52px
+		height: 52px
+	&__icon-2
+		background-position: 0px -62px
+		width: 48px
+		height: 56px
+	&__icon-3
+		background-position: 0px -128px
+		width: 56px
+		height: 48px
+		margin-top: 9px
+
+	.title-top-2
+		margin-top: 27px
+	.title-top-2
+		margin-top: 24px
+	.title-top-3
+		margin-top: 24px
 
 
-.look
+.service
+	margin-top: 148px
+	color: lighten($main-color, 6%)
+	h2
+		font-size: em(17px)
+	p
+		font-size: em(14px)
+			
+	&__icon
+		background: url(../img/service-icon.png)
+		float: left
+	&__icon-1
+		background-position: 0px 0px
+		margin: 6px 7px
+		width: 30px
+		height: 30px
+	&__icon-2
+		background-position: 0px -40px
+		margin-left: 8px
+		width: 24px
+		height: 38px
+	&__icon-3
+		background-position: 0px -88px
+		margin-top: 24px
+		width: 32px
+		height: 31px
+	&__icon-4
+		background-position: 0px -129px
+		margin-top: 24px
+		width: 38px
+		height: 35px
+		
+
+.service__item-2,
+.service__item-4
+	padding-left: 33px
+
+.service__item-3,
+.service__item-4
+	padding-top: 31px
+
+.service__title
+	padding: 11px 58px
+
+.service__text
+ margin-top: 14px
+
+
+.about-app
 	background: #eef1ec
-	padding: 85px 0 130px
+	padding: 43px 0 0
+	&__img
+		margin: 23px 18px 0
+	&__context
+		padding-top: 120px
+		color: lighten($main-color, 6%)
+	&__title
+		font-size: em(31px)
+	&__text
+		font-size: em(15px)
+		padding-top: 3px
+		line-height: 22px
+		margin-bottom: 20px
+	&__check
+		display: flex
+		align-items: center
+		p
+			font-size: em(14px)
+			padding-left: 7px
+		&-down
+			padding-top: 10px
+		.fa-check-circle-o
+			font-size: em(30px)
 
+		
 
+.comment
+	height: auto
+	background: #ffffff
+	padding: 91px 0 50px
+	&__text
+		margin-top: 136px
+		color: lighten($main-color, 10%)
+		font-family: "Montserrat"
+		&-big
+			font-size: em(23px)
+			line-height: 39px
+		&-small
+			margin-top: 13px
+			p
+				font-size: em(14px)
+		&-green
+			font-family: "ProximaNova-Bold"
+			font-size: em(15px)
+			color: #6fb048
 
-
-
-
-
-
+	&__img
+		margin: 51px 120px
+		border-radius: 50%
 
 .details
+	height: auto
 	background: url(../img/bg-map.jpg)
 	background-size: cover
+	padding: 127px 0
+
+	&__title
+		font-size: em(31px)
+		color: $main-color
+	&__text
+		font-size: em(15px)
+		color: lighten($main-color, 6%)
+
+.purchase
 	height: auto
+	background: #ffffff
+	padding: 60px 0 72px
+	.price
+		display: flex
+		flex-direction: row
+		text-align: center
+		margin-top: 20px
+		
+	.price-item
+		border: 1px solid #c1d3d2
+
+		&__type
+			padding-top: 30px
+			font-family: "ProximaNova-Bold"
+			font-size: em(20px)
+			color: $accent-color
+
+		&__cost
+			margin-bottom: 0
+			font-family: "ProximaNova-Bold"
+			font-size: em(49px)
+			color: #0f5f5c
+
+		&__service
+			font-family: "RobotoRegular"
+			color: lighten($main-color, 12%)
+			margin-top: 20px
+
+		&__month
+			font-family: "Montserrat"
+			font-size: em(14px)
+			color: lighten($main-color, 6%)
+
+		&-first
+			border-right: none
+		&-third
+			border-left: none
+
+		.button-small
+			width: 160px
+			height: 48px
+			background: #83a7a5
+			margin: 40px 0
+			&:hover
+				background: #529d25
+			&:active
+				background: #6fb048
+
+.title-pos
+	margin-top: 67px
+.title__up-small
+	font-size: em(21px)
+
+.attendance
+	list-style: none
+	padding: 0
+	margin-top: 19px
+	li
+		width: 80%
+		display: flex
+		align-items: center
+		margin-top: 7px
+	p
+		padding-left: 10px
+		font-family: "Montserrat"
+		font-size: em(14px)
+		color: #9a9a9a
+
+	&-left-2
+		padding-left: 10px
+	&-left-3
+		padding-left: 18px
+
+	.fa-check-circle-o
+		font-size: em(30px)
+		color: lighten($main-color, 15%)
+
+
+.title-pos-down
+	margin-top: 80px
+.title__up-height
+	margin-top: 16px
+
+.email
+	font-family: "ProximaNova-Bold"
+	font-size: em(19px)
+	margin-top: 40px
+	color: $main-color
+
+.download
+	height: auto
+	background: url(../img/bg-download.jpg) no-repeat
+	background-size: cover
+	position: relative
+	&::before
+		content: ""
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		position: absolute
+		background: rgba(230, 231, 226,.9)
+	&__title
+		font-size: em(28px)
+		color: $main-color
+		margin-bottom: 0
+	&__context
+		padding: 50px 0
+	&__text
+		font-size: em(16px)
+		color: #83a7a5
+
+	&-wrap
+		display: flex
+		justify-content: flex-end
+		padding: 80px 0
+
+	.button-width
+		width: 285px
+		height: 42px
+		font-size: em(13px)
+
+
+.footer
+	height: auto
+	padding: 82px 0 0
+	font-family: "Montserrat"
+
+	&__title
+		font-family: "ProximaNova-Bold"
+		font-size: em(16px)
+		color: $main-color
+		margin-top: 19px
+
+	&__company,
+	&__other,
+	&__contact
+		display: flex
+		flex-direction: column
+
+	a,span
+		font-size: em(13px)
+		color: lighten($main-color, 10%)
+		margin-top: 7px
+
+	&__contact
+		padding-top: 6px	
+	&__company
+		padding: 2px 10px
+	&__other
+		padding-left: 16px
+	&__newsletter
+		padding-left: 29px
+		display: flex
+		flex-direction: column
+
+
+.logo-back
+	color: $main-color
+	font-size: em(20px)
+
+.input
+	width: 230px
+	height: 36px
+	background: #eef1ec
+	border: none
+	outline: none
+	font-size: em(13px)
+	padding-left: 14px
+	color: $main-color
+
+.input-pos
+	margin-top: 15px
+	background-image: url('../img/fly.png')
+	background-repeat: no-repeat
+	background-position: right
+	background-position-x: 92%
+	padding-right: 10px
+
+// style for placeholder start
+
+::-webkit-input-placeholder
+	color: lighten($main-color, 10%)
+
+:-moz-placeholder 
+	color: lighten($main-color, 10%)
+	opacity: 1
+
+::-moz-placeholder 
+	color: lighten($main-color, 10%)
+	opacity:  1
+
+:-ms-input-placeholder 
+	color: lighten($main-color, 10%)
+
+:focus::-webkit-input-placeholder 
+	color: transparent
+:focus::-moz-placeholder 
+	color: transparent
+:focus:-moz-placeholder           
+	color: transparent
+:focus:-ms-input-placeholder      
+	color: transparent
+	
+// style for placeholder end
+
+.footer__down
+	margin-top: 58px
+	padding: 15px 0 15px
+	border-top: 1px solid #eef1ec
+	.social
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		&__icon
+			background: url(../img/sprite-icons.png)
+			width: 30px
+			height: 30px
+			margin-right: 10px
+		&__icon-1
+			background-position: 0px -40px
+		&__icon-2
+			background-position: 0px 0px
+		&__icon-3
+			background-position: 0px -120px
+		&__icon-4
+			background-position: 0px -80px
+		&__icon-5
+			background-position: 0px -160px
+			margin-right: 0
 
 //ALWAYS END
 @import "media"
