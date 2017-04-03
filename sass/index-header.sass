@@ -113,10 +113,15 @@ button
 	display: none
 	text-align: center
 	background: #306f6e
-	padding-bottom: 12px	
+
 .slicknav_btn
 	background-color: #165856
+	transition: all.3s ease
+	&:active
+		background-color: lighten(#165856, 10%)
 
+.slicknav_nav
+	padding-bottom: 25px
 
 .header__text
 	margin-top: 207px

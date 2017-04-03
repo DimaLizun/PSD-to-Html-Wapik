@@ -15,6 +15,8 @@
 	.input-pos
 		width: 200px
 
+	
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
@@ -98,7 +100,9 @@
 
 	.menu
 		&__item
-			font-size: 16px
+			font-size: 25px
+			margin-top: 3px
+			height: 40px
 			&:hover
 				background: none
 				color: none
@@ -129,7 +133,7 @@
 	///header end
 
 	.features 
-		padding: 64px 0 45px
+		padding: 24px 0 0
 
 	.about-app__img 
 		width: 70%
@@ -143,19 +147,37 @@
 
 	.comment
 		padding: 0px 0 20px
+
 		&__text
 			display: flex
 			flex-direction: column
 			align-items: center
+			text-align: center
 			&-big
 				width: 90%
+
 		&__wrap-img
 			display: flex
-			justify-content: center
-			margin-top: 25px
+			flex-direction: column
+			align-items: center
+			text-align: center
+
+			margin-top: 30px
+
 		&__img
 			width: 30%
 			height: 100%
+
+		&__text-hid
+			visibility: hidden
+			position: absolute
+
+		&__text-vis
+			visibility: visible
+			margin-bottom: 10px
+			p
+				color: lighten($main-color, 5%)
+				font-size: em(15px)
 
 	.details
 		padding-top: 0
@@ -164,6 +186,7 @@
 			display: flex
 			flex-direction: column
 			align-items: center
+			text-align: center
 			h2,p
 				width: 90%
 
@@ -215,12 +238,26 @@
 		text-align: center
 
 	.input-pos
-		width: 250px
-		height: 50px
+		width: 275px
+		height: 60px
+		font-size: em(18px)
 
 	.social
 		margin-top: 15px
 		justify-content: center !important
+
+	.footer__contact
+		.logo-back
+			font-size: em(20px)
+		span
+			font-size: em(20px)
+
+	.footer__newsletter
+		.footer__title
+			font-size: em(22px)
+		.footer__text
+			font-size: em(15px)
+
 	
 		
 
